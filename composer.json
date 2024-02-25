@@ -5,6 +5,11 @@
             "Alexmandrik\\AdvancedQueryBuilder\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Alex Andras Mandrik",
@@ -18,7 +23,8 @@
     ,
     "require-dev": {
         "roave/security-advisories": "dev-latest",
-        "pestphp/pest": "^2.34"
+        "pestphp/pest": "^2.34",
+        "orchestra/testbench": "^8.21"
     },
     "config": {
         "allow-plugins": {

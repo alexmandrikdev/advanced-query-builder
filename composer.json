@@ -1,0 +1,22 @@
+{
+    "name": "alexmandrik/advanced-query-builder",
+    "autoload": {
+        "psr-4": {
+            "Alexmandrik\\AdvancedQueryBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Andras Mandrik",
+            "email": "alexmandrik@pm.me"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^10.45",
+        "illuminate/support": "^10.45"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    }
+}

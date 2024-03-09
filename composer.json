@@ -1,39 +1,42 @@
 {
-    "name": "alexmandrik/advanced-query-builder",
-    "autoload": {
-        "psr-4": {
-            "Alexmandrik\\AdvancedQueryBuilder\\": "src/"
-        }
+  "name": "alexmandrik/advanced-query-builder",
+  "autoload": {
+    "psr-4": {
+      "AlexMandrik\\AdvancedQueryBuilder\\": "src/"
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Alex Andras Mandrik",
-            "email": "alexmandrik@pm.me"
-        }
-    ],
-    "require": {
-        "illuminate/database": "^10.45",
-        "illuminate/support": "^10.45"
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
     }
-    ,
-    "require-dev": {
-        "roave/security-advisories": "dev-latest",
-        "pestphp/pest": "^2.34",
-        "orchestra/testbench": "^8.21",
-        "laravel/pint": "^1.14"
-    },
-    "config": {
-        "allow-plugins": {
-            "pestphp/pest-plugin": true
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/pest",
-        "lint": "vendor/bin/pint"
+  },
+  "authors": [
+    {
+      "name": "Alex András Mándrik",
+      "email": "alexmandrik@pm.me"
     }
+  ],
+  "require": {
+    "illuminate/database": "^10.46",
+    "illuminate/support": "^10.46"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "pestphp/pest": "^2.34",
+    "orchestra/testbench": "^8.21",
+    "laravel/pint": "^1.14",
+    "symfony/var-dumper": "^6.4"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest",
+    "lint": "vendor/bin/pint"
+  }
 }

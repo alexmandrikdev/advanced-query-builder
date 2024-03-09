@@ -20,9 +20,10 @@ abstract class TestCase extends BaseTestCase
     protected function setUpDatabase()
     {
         tap($this->app['db']->connection()->getSchemaBuilder(), function ($schema) {
-            $schema->create('markets', function (Blueprint $table) {
+            $schema->create('users', function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('name');
+                $table->unsignedTinyInteger('age');
                 $table->timestamps();
             });
         });

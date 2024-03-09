@@ -1,5 +1,7 @@
 {
   "name": "alexmandrik/advanced-query-builder",
+  "description": "Advanced Query Builder for Laravel",
+  "license": "MIT",
   "autoload": {
     "psr-4": {
       "AlexMandrik\\AdvancedQueryBuilder\\": "src/"
